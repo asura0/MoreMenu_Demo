@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D58DC7F1CD05B02004397B0 /* 箭头向上.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D58DC7E1CD05B02004397B0 /* 箭头向上.png */; };
+		8D58DC811CD05B1D004397B0 /* 箭头向下.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D58DC801CD05B1D004397B0 /* 箭头向下.png */; };
+		8D58DC841CD09745004397B0 /* SegmentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D58DC831CD09745004397B0 /* SegmentButton.m */; };
 		8DB013971CCF72B400789905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB013961CCF72B400789905 /* main.m */; };
 		8DB0139A1CCF72B400789905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB013991CCF72B400789905 /* AppDelegate.m */; };
 		8DB0139D1CCF72B400789905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0139C1CCF72B400789905 /* ViewController.m */; };
@@ -15,6 +18,7 @@
 		8DB013A51CCF72B400789905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB013A31CCF72B400789905 /* LaunchScreen.storyboard */; };
 		8DB013B01CCF72B400789905 /* MoreMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB013AF1CCF72B400789905 /* MoreMenuTests.m */; };
 		8DB013BB1CCF72B400789905 /* MoreMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB013BA1CCF72B400789905 /* MoreMenuUITests.m */; };
+		8DB013CA1CCF7D0800789905 /* MoreMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB013C91CCF7D0800789905 /* MoreMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D58DC7E1CD05B02004397B0 /* 箭头向上.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "箭头向上.png"; sourceTree = "<group>"; };
+		8D58DC801CD05B1D004397B0 /* 箭头向下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "箭头向下.png"; sourceTree = "<group>"; };
+		8D58DC821CD09745004397B0 /* SegmentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentButton.h; sourceTree = "<group>"; };
+		8D58DC831CD09745004397B0 /* SegmentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentButton.m; sourceTree = "<group>"; };
 		8DB013921CCF72B400789905 /* MoreMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB013961CCF72B400789905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DB013981CCF72B400789905 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +59,8 @@
 		8DB013B61CCF72B400789905 /* MoreMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoreMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB013BA1CCF72B400789905 /* MoreMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreMenuUITests.m; sourceTree = "<group>"; };
 		8DB013BC1CCF72B400789905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB013C81CCF7D0800789905 /* MoreMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreMenuView.h; path = ../MoreMenuView.h; sourceTree = "<group>"; };
+		8DB013C91CCF7D0800789905 /* MoreMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreMenuView.m; path = ../MoreMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D58DC7C1CD05AEA004397B0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DB013C81CCF7D0800789905 /* MoreMenuView.h */,
+				8DB013C91CCF7D0800789905 /* MoreMenuView.m */,
+				8D58DC821CD09745004397B0 /* SegmentButton.h */,
+				8D58DC831CD09745004397B0 /* SegmentButton.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8D58DC7D1CD05AEA004397B0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8D58DC7E1CD05B02004397B0 /* 箭头向上.png */,
+				8D58DC801CD05B1D004397B0 /* 箭头向下.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		8DB013891CCF72B400789905 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +131,8 @@
 		8DB013941CCF72B400789905 /* MoreMenu */ = {
 			isa = PBXGroup;
 			children = (
+				8D58DC7C1CD05AEA004397B0 /* CustomViews */,
+				8D58DC7D1CD05AEA004397B0 /* Images */,
 				8DB013981CCF72B400789905 /* AppDelegate.h */,
 				8DB013991CCF72B400789905 /* AppDelegate.m */,
 				8DB0139B1CCF72B400789905 /* ViewController.h */,
@@ -244,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DB013A51CCF72B400789905 /* LaunchScreen.storyboard in Resources */,
+				8D58DC811CD05B1D004397B0 /* 箭头向下.png in Resources */,
 				8DB013A21CCF72B400789905 /* Assets.xcassets in Resources */,
 				8DB013A01CCF72B400789905 /* Main.storyboard in Resources */,
+				8D58DC7F1CD05B02004397B0 /* 箭头向上.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D58DC841CD09745004397B0 /* SegmentButton.m in Sources */,
+				8DB013CA1CCF7D0800789905 /* MoreMenuView.m in Sources */,
 				8DB0139D1CCF72B400789905 /* ViewController.m in Sources */,
 				8DB0139A1CCF72B400789905 /* AppDelegate.m in Sources */,
 				8DB013971CCF72B400789905 /* main.m in Sources */,
@@ -498,6 +534,7 @@
 				8DB013C11CCF72B400789905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DB013C21CCF72B400789905 /* Build configuration list for PBXNativeTarget "MoreMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +543,7 @@
 				8DB013C41CCF72B400789905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DB013C51CCF72B400789905 /* Build configuration list for PBXNativeTarget "MoreMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +552,7 @@
 				8DB013C71CCF72B400789905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
