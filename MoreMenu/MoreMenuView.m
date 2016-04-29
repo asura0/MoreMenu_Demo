@@ -19,7 +19,7 @@ static NSString *indefier = @"UITableViewCell";
 
 @interface MoreMenuView () <UITableViewDataSource, UITableViewDelegate>
 {
-    NSInteger _numberHeight;
+    NSString *_segmentButtonTitle;//选择条件后,分段控件上标题
 }
 
 //标题
@@ -401,6 +401,8 @@ static NSString *indefier = @"UITableViewCell";
         basicAnimation.fromValue = @0;
         basicAnimation.toValue = [NSNumber numberWithFloat:M_PI];
         
+        _segmentButtonTitle = nil;
+        
     }else{
         //反转
         basicAnimation.fromValue = [NSNumber numberWithFloat:M_PI];
@@ -412,6 +414,12 @@ static NSString *indefier = @"UITableViewCell";
     basicAnimation.removedOnCompletion = NO;
     basicAnimation.fillMode = kCAFillModeForwards;
     [sender.imgView.layer addAnimation:basicAnimation forKey:@"rotation"];
+    
+    //按钮赋值
+    if (_segmentButtonTitle == nil || [_segmentButtonTitle isEqualToString:@"无数据"]) {
+        return;
+    }
+    [sender setTitle:_segmentButtonTitle forState:UIControlStateNormal];
 }
 
 #pragma mark -UITableView delegate && datasource
@@ -457,11 +465,12 @@ static NSString *indefier = @"UITableViewCell";
         //一级菜单.点击完后直接回调
         string = self.datasourceMain[indexPath.row];
         self.selectedIndex ? self.selectedIndex(string) : nil;
-        
+        _segmentButtonTitle = string;
+
         //初始化下标
         _index = 0;
         [self dismissAllViews:nil];
-        
+
     }else if (tableView == self.leftTableView){
         
         //记录一级菜单点击下标,刷新二级菜单
@@ -473,9 +482,12 @@ static NSString *indefier = @"UITableViewCell";
         //拼接两级的数据,回调
         string = [NSString stringWithFormat:@"%@%@",self.datasourceOne[_index],self.datasourceTwo[self.index][indexPath.row]];
         self.selectedIndex ? self.selectedIndex(string) : nil;
+        _segmentButtonTitle = string;
+
         //初始化下标
         _index = 0;
         [self dismissAllViews:nil];
+
     }
 }
 
